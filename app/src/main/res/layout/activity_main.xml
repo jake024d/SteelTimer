@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.android.steeltimer.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_countdown"
+        android:layout_alignRight="@+id/text_view_countdown"
+        android:text="Finished Product"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00:00:00"
+        android:textColor="@android:color/black"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/current_burn_timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_countdown"
+        android:layout_alignRight="@+id/text_view_countdown"
+        android:text="Current Load"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_view_countdown_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_burn_timer_text"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="12:00:00"
+        android:textColor="@android:color/black"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/current_coal_timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_countdown_two"
+        android:layout_alignRight="@+id/text_view_countdown"
+        android:text="Current Coal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_view_countdown_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_burn_timer_text"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="01:20:00"
+        android:textColor="@android:color/black"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_add_coal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/button_start_pause"
+            android:layout_below="@+id/text_view_countdown"
+            android:text="Add Coal"
+            android:visibility="invisible"
+            tools:visibility="visible"/>
+
+        <Button
+            android:id="@+id/button_start_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_centerHorizontal="true"
+            android:text="start" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_toEndOf="@+id/button_start_pause"
+            android:layout_toRightOf="@+id/button_start_pause"
+            android:text="reset"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
