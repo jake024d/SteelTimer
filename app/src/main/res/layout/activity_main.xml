@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/finished_product"
-        android:textSize="@dimen/text_one" />
+        android:textSize="@dimen/text_one"
+        android:textColor="@color/colorPrimaryDark"/>
 
     <TextView
         android:id="@+id/text_view_countdown"
@@ -28,7 +29,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/current_load"
-        android:textSize="@dimen/text_one" />
+        android:textSize="@dimen/text_one"
+        android:textColor="@color/colorPrimaryDark"/>
 
     <TextView
         android:id="@+id/text_view_countdown_two"
@@ -45,7 +47,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/current_coal"
-        android:textSize="@dimen/text_one" />
+        android:textSize="@dimen/text_one"
+        android:textColor="@color/colorPrimaryDark"/>
 
     <TextView
         android:id="@+id/text_view_countdown_three"
@@ -82,8 +85,6 @@
             android:layout_width="@dimen/none"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginStart="@dimen/margin"
-            android:layout_marginLeft="@dimen/margin"
             android:text="@string/reset"
             android:visibility="invisible"
             tools:visibility="visible" />
