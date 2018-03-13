@@ -4,4 +4,5 @@
     <dimen name="text_one">20sp</dimen>
     <dimen name="text_two">60sp</dimen>
     <dimen name="margin">11dp</dimen>
+    <dimen name="none">0dp</dimen>
 </resources>
