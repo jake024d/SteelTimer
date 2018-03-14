@@ -121,12 +121,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 mTimerRunning = false;
-                mButtonStartReset.setText("Start");
+                mButtonStartReset.setText(R.string.start);
             }
         }.start();
 
         mTimerRunning = true;
-        mButtonStartReset.setText("Reset");
+        mButtonStartReset.setText(R.string.reset);
         mButtonAddCoal.setVisibility(View.VISIBLE);
 
 //         Starting the current burn countdown timer
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * onSaveInstanceState override to save important values.
-     * ~needs more concrete data saving, so to make sure it's never lost until deletion.
+     * ~needs more concrete data saving, so to make sure it's never lost until user chooses so.
      */
     @Override
     public void onSaveInstanceState(Bundle outState) {
